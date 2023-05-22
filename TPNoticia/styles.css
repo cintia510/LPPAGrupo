@@ -1,0 +1,386 @@
+header#header_Ailin{
+    background-color: lightgreen;
+    width: 1344px;
+    height: 150px;
+
+}
+
+.flex-header_ailin{
+    border: 1px solid black;
+    background: #470707;
+    padding:10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    color: white;
+}
+
+.h1{
+    font-size: 1250px;
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    justify-items: center;
+    border: 2px solid black;
+}
+.suscribite_ailin{
+    border: 1px solid black;
+    background-color: #470707;;
+    color: white;
+    padding:2px;
+    justify-content: center;
+    width: 80px;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 3px;
+    float: left;
+}
+.iniciar_sesion_ailin{
+    border: 1px solid black;
+    background-color:#470707;;
+    padding:2px;
+    justify-content: center;
+    width: 100px;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 3px;
+    color: white;
+    float: left;
+}
+
+.buscador_ailin{
+    padding:2px;
+    justify-content: center;
+    width: 90px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    background-color: #470707;
+    border: 1px solid black;
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    float: right;
+    margin: 3px;
+}
+
+.busqueda_ailin{
+    height: 19px;
+    padding:2px;
+    justify-content: center;
+    width: 200px;
+    text-align: center;
+    color: white;
+    background-color: #470707;
+    border: 1px solid black;
+    text-align: center;
+    display: flex;
+    padding: 2px;
+    flex-flow: row wrap;
+    float: right;
+    margin: 3px;
+
+}
+div#current_date_ailin{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin: 3px;
+}
+
+.logo_ailin{
+    width: 150px;
+    height: 75px;
+    margin: 16px;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.nav-list_nico {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    background-color: #470707;
+    color: white;
+}
+
+.nav-list_nico li a {
+    text-decoration: none;
+    color:#ececec;
+}
+
+.abrir-menu_nico,
+.cerrar-menu_nico {
+    display: none;
+}
+
+@media screen and (max-width: 550px) {
+    .abrir-menu_nico,
+    .cerrar-menu_nico {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu_nico {
+        color: black;
+    }
+
+    .cerrar-menu_nico {
+        color: #ececec;
+    }
+
+    .nav_nico {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .nav_nico.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-list_nico {
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list_nico li a {
+        color: #ecececec;
+    }
+}
+
+
+#flex-container-GF{
+	display: flex;  	
+	justify-content:space-between ; 
+	align-items: center ; 	
+	align-content: stretch; 	
+  flex-direction: column;
+}
+
+
+
+.articulo-GF{
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+  margin: 5px;
+ }
+
+.articulo-body-GF{
+  display: flex;
+  flex: 0;
+  flex-direction: column;
+  background-color: whitesmoke;
+  margin-bottom: 5px;
+  justify-content: center;
+  width: 100%
+
+}
+
+.articulo-contenido-GF{
+  flex:0;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1.h1-GF, img.img-GF{
+display: flex;
+flex-direction: row;
+
+}
+
+
+.main-container{
+		display: flex;
+		flex-direction: column;
+}
+
+
+.guido-container {
+    display: flex;
+	flex-direction: row;
+    justify-content: center;
+  }
+  
+  .guido-banner-left,
+  .guido-banner-right {
+    flex-basis: 20%;
+    padding: 20px;
+  }
+  
+  .guido-banner-left img,
+  .guido-banner-right img {
+    max-width: 100%;
+    height: calc(100vw * 0.6);
+  }
+  
+  .guido-main-article {
+    /*flex-basis: 80%;*/
+    padding: 20px;
+  }
+  
+  .guido-other-articles {
+    flex-basis: 20%;
+    padding: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .guido-container {
+      flex-wrap: wrap;
+    }
+  
+    .guido-banner-left,
+    .guido-banner-right,
+    .guido-main-article,
+    .guido-other-articles {
+      flex-basis: 100%;
+    }
+  }
+  
+  
+  
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  
+  .guido-navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+  }
+  
+  .guido-navbar-toggle {
+    display: none;
+  }
+  
+  .guido-navbar-toggle-label {
+    
+    display: block;
+    cursor: pointer;
+    
+  }
+  
+  .guido-navbar-toggle-label span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 4px;
+  }
+  
+  .guido-navbar-menu {
+    display: flex;
+  }
+  
+  .guido-navbar-nav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .guido-nav-item {
+    margin-right: 20px;
+  }
+  
+  .guido-nav-link {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .guido-title {
+    text-align: center;
+    margin: 20px;
+  }
+  @media (max-width: 768px) {
+    .guido-navbar-toggle {
+      /*display: block;*/
+    }
+  
+  .guido-banner-left img,
+  .guido-banner-right img {
+    width: 100%;
+    height: calc(100vw * 0.2);
+  }
+    
+    .guido-navbar-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #333;
+      width: 100%;
+      padding: 20px;
+      display: none;
+    }
+  
+    .guido-navbar-toggle:checked + .guido-navbar-menu {
+      display: block;
+    }
+  
+    .guido-navbar-nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .guido-nav-item {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .guido-title {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .guido-navbar-toggle-label {
+      display: none;
+    }
+  
+    .guido-navbar-menu {
+      display: flex !important;
+    }
+  
+    .guido-navbar-nav {
+      flex-direction: row;
+    }
+  
+    .guido-nav-item {
+      margin-right: 20px;
+    }
+}
+  
+#footer {
+clear: both;
+background-color: #470707;
+color: white;
+padding: 10px;
+text-align: center;
+}
